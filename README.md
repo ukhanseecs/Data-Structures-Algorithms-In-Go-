@@ -6,14 +6,14 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 - [Recursive Functions](#recursive-functions)
 
 ## [Arrays](./arrays.go)
-- **SumArray**: Calculate the sum of all elements in an array.
-- **Sequential Search**: Perform a linear search to find an element in an array.
-- **Binary Search**: Efficiently search for an element in a sorted array using the binary search algorithm.
+- **SumArray**
+- **Sequential Search**
+- **Binary Search**
 - **Largest Sum Subarray**: Find the subarray with the maximum sum (Kadane’s Algorithm).
-- **Rotating an Array by k Positions**: Rotate the elements of an array to the left or right by `k` positions.
+- **Rotating an Array by k Positions**
 - **Array Waveform**: Rearrange the array elements in a wave-like pattern.
 - **Index Array**: Map elements to their corresponding indices based on array values.
-- **Sorting From 1 to n**: Sort an array containing integers from 1 to `n`.
+- **Sorting From 1 to n**
 - **Smallest Positive Missing Number**: Identify the smallest positive integer missing from an array.
 - **Maximum, Minimum Array**: Find the maximum and minimum elements in an array.
 - **Array Index Maximum Difference**: Calculate the maximum difference between indices of an array such that the element at the smaller index is less than or equal to the element at the larger index.
