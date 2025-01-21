@@ -9,7 +9,7 @@ func SumArr(data []int) int {
 	  total = total + data[i]
 	}
 	return total
-  }
+}
 
 
 
