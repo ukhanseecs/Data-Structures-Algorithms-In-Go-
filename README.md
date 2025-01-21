@@ -30,17 +30,11 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 To explore the code and test the implementations:
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/ds-algo-go.git
+   git clone https://github.com/ukhanseecs/ds-algo-go.git
    cd ds-algo-go
    ```
-2. Run the Go files:
-   ```bash
-   go run arrays.go
-   go run recursive.go
-   ```
+
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this repository.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
