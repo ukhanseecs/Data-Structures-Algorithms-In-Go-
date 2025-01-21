@@ -35,6 +35,3 @@ To explore the code and test the implementations:
    ```
 
 
-## Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests to improve this repository.
-
