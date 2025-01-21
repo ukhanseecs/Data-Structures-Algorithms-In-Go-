@@ -101,7 +101,7 @@ func WaveArray(arr []int) {
 
 
 
-func indexArray(arr []int, size int) {
+func IndexArray(arr []int, size int) {
     //Implement your solution here
   temp := 0
   for i := 0; i<size ; i++ {
