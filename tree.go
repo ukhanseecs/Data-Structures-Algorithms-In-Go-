@@ -280,6 +280,106 @@ func (t *Tree) PrintSpiralTree() {
 
 
 
+func (t *Tree) NthPreOrder(index int) {
+    var counter int
+    nthPreOrder(t.root, index, &counter)
+}
+
+func nthPreOrder(node *Node, index int, counter *int) {
+   //Implement your solution here
+    if node != nil {
+      (*counter)++
+      if *counter == index {
+        fmt.Println(node.value)
+      }
+      
+      nthPreOrder(node.left,index, counter)
+      nthPreOrder(node.right, index, counter)
+}}
+
+
+
+//================================================================================================================
+
+
+func (t *Tree) NthPostOrder(index int) {
+  var counter int
+  nthPostOrder(t.root, index, &counter)
+}
+
+func nthPostOrder(node *Node, index int, counter *int) {
+  //Implement your solution here
+  
+  if node != nil {
+    nthPostOrder(node.left, index, counter)
+    nthPostOrder(node.right, index, counter)
+    (*counter)++
+    if index == *counter {
+      fmt.Println(node.value)
+    }
+  }
+  
+
+
+  //Implement your solution here
+}
+
+
+
+//================================================================================================================
+
+
+func (t *Tree) NthInOrder(index int) {
+  var counter int
+  nthInOrder(t.root, index, &counter)
+}
+
+func nthInOrder(node *Node, index int, counter *int) {
+  //Implement your solution here
+  if node != nil {
+    nthInOrder(node.left, index, counter)
+    (*counter)++
+    if index == *counter {
+      fmt.Println(node.value)
+    }
+    nthInOrder(node.right, index, counter)
+  }
+
+  //Implement your solution here
+}
+
+
+
+//================================================================================================================
+
+func (t *Tree) PrintAllPath() {
+  stk := new(Stack)
+  printAllPath(t.root, stk)
+}
+
+func printAllPath(curr *Node, stk *Stack) {
+  //Implement your solution here
+  if curr == nil {
+      return
+  }
+  
+  stk.Push(curr.value)
+  if curr.left == nil && curr.right == nil {
+    stk.Print()
+    fmt.Print("; ")
+    stk.Pop()
+    return
+  }
+  printAllPath(curr.right, stk)
+  printAllPath(curr.left, stk)
+  stk.Pop()
+}
+
+//================================================================================================================
+
+
+
+
 
 
 
