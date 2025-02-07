@@ -421,6 +421,24 @@ func sumAllBT(curr *Node) int {
 
 
 
+func (t *Tree) NumLeafNodes() int {
+  return numLeafNodes(t.root)
+}
+
+func numLeafNodes(curr *Node) int {
+  //Implement your solution here
+  count := 0
+  if curr== nil {
+    return 0
+  }
+  if curr.left == nil && curr.right == nil {
+    count ++
+  }
+  return count + numLeafNodes(curr.left) + numLeafNodes(curr.right) //Kindly change the return value as per needs
+}
+
+
+
 
 
 
