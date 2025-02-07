@@ -586,3 +586,29 @@ func copyTree(curr *Node) *Node {
   return temp
 }
 
+
+//=================================================================================================================
+
+
+
+
+
+
+func (t *Tree) CopyMirrorTree() *Tree {
+  tree := new(Tree)
+  tree.root = copyMirrorTree(t.root)
+  return tree
+}
+
+func copyMirrorTree(curr *Node) *Node {
+  //Implement your solution here
+  if curr == nil {
+    return nil
+  }
+  var temp *Node
+  temp = new(Node)
+  temp.value = curr.value
+  temp.left = copyMirrorTree(curr.right)
+  temp.right = copyMirrorTree(curr.left)
+  return temp
+}
