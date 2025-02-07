@@ -612,3 +612,12 @@ func copyMirrorTree(curr *Node) *Node {
   temp.right = copyMirrorTree(curr.left)
   return temp
 }
+
+
+//=================================================================================================================
+
+
+
+func (t *Tree) Free() {
+  t.root = nil
+}
