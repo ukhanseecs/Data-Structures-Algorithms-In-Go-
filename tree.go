@@ -560,3 +560,29 @@ func isEqual(node1 *Node, node2 *Node) bool {
   return (left && right && (node1.value==node2.value))
   }
 }
+
+
+
+//================================================================================================================
+
+
+func (t *Tree) CopyTree() *Tree {
+  Tree2 := new(Tree)
+  Tree2.root = copyTree(t.root)
+  return Tree2
+}
+
+func copyTree(curr *Node) *Node {
+  
+  var temp *Node
+  //Implement your solution here
+  if curr == nil {
+    return nil
+  }
+  temp = new(Node)
+  temp.value = curr.value
+  temp.left = copyTree(curr.left)
+  temp.right = copyTree(curr.right)
+  return temp
+}
+
