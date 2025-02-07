@@ -539,4 +539,24 @@ func treeDepth(root *Node) int {
 
 
 
+//================================================================================================================
 
+
+func (t *Tree) IsEqual(t2 *Tree) bool {
+  return isEqual(t.root, t2.root)
+}
+
+func isEqual(node1 *Node, node2 *Node) bool {
+  //Implement your solution here
+  if node1 == nil && node2 == nil {
+    return true
+  }
+  
+  if node1 == nil || node2 ==nil {
+    return false
+  } else {
+  left := isEqual(node1.left, node2.left)
+  right := isEqual(node1.right, node2.right)
+  return (left && right && (node1.value==node2.value))
+  }
+}
