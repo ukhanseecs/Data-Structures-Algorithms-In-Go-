@@ -379,6 +379,27 @@ func printAllPath(curr *Node, stk *Stack) {
 
 
 
+func (t *Tree) NumNodes() int {
+  return numNodes(t.root)
+}
+
+func numNodes(curr *Node) int {
+  //Implement your solution here
+  count := 0
+  if curr == nil {
+    return 0
+  }
+  count ++
+
+  return count +  numNodes(curr.left) + numNodes(curr.right) //Kindly change the return value as per your needs
+}
+
+
+
+//================================================================================================================
+
+
+
 
 
 
