@@ -486,6 +486,36 @@ func searchBT(root *Node, value int) bool {
 }
 
 
+//================================================================================================================
+
+import "math"
+
+func (t *Tree) FindMaxBT() int {
+    return findMaxBT(t.root)
+}
+
+func findMaxBT(curr *Node) int {
+    //Implement your solution here
+    max := 0
+    if curr == nil {
+      return math.MinInt32
+    }
+    if curr.value > max {
+      max = curr.value
+    }
+    maxL := findMaxBT(curr.left)
+    maxR := findMaxBT(curr.right)
+    if maxL > max {
+      max = maxL
+    } 
+    if maxR > max {
+      max = maxR
+    }
+    return max
+    //Implement your solution here
+}
+
+
 
 
 
