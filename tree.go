@@ -516,6 +516,25 @@ func findMaxBT(curr *Node) int {
 }
 
 
+//================================================================================================================
+
+func (t *Tree) TreeDepth() int {
+  return treeDepth(t.root)
+}
+
+func treeDepth(root *Node) int {
+  
+  if root == nil {
+    return -1
+  }
+  depthl := treeDepth(root.left)
+  
+  
+  return depthl+1 //Kindly change the return value as per needs
+}
+
+
+
 
 
 
