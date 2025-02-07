@@ -440,6 +440,32 @@ func numLeafNodes(curr *Node) int {
 
 
 
+//================================================================================================================
+
+
+
+func (t *Tree) NumFullNodesBT() int {
+  return numFullNodesBT(t.root)
+}
+
+func numFullNodesBT(curr *Node) int {
+  
+  //Implement your solution here
+
+  count := 0
+  if curr == nil {
+    return 0
+  }
+  if curr.left != nil && curr.right !=nil {
+    count++
+  }
+
+  //Implement your solution here
+
+  return count + numFullNodesBT(curr.left) + numFullNodesBT(curr.right)
+}
+
+
 
 
 
