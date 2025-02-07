@@ -399,6 +399,26 @@ func numNodes(curr *Node) int {
 //================================================================================================================
 
 
+func (t *Tree) SumAllBT() int {
+  return sumAllBT(t.root)
+}
+
+func sumAllBT(curr *Node) int {
+  //Implement your solution here
+  sum := 0
+  if curr == nil {
+    return 0
+  }
+  sum += curr.value
+  
+  return sum + sumAllBT(curr.left) + sumAllBT(curr.right) //Kindly change the return value as per need
+}
+
+
+///================================================================================================================
+
+
+
 
 
 
