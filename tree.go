@@ -685,3 +685,21 @@ func isCompleteTreeUtil(curr *Node, index int, count int) bool {
 //====================================================================================================================
 
 
+func (t *Tree) IsHeap() bool {
+  parentValue := -99999999
+  return t.IsCompleteTree() && isHeapUtil(t.root, parentValue)
+}
+
+func isHeapUtil(curr *Node, parentValue int) bool {
+  //Implement your solution here
+  if curr == nil {
+    return true
+  }
+  if curr.value < parentValue {
+    return false
+  }
+  
+  return isHeapUtil(curr.left, curr.value) && isHeapUtil(curr.right, curr.value)
+}
+
+
