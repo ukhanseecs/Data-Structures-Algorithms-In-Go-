@@ -663,3 +663,25 @@ func isCompleteTree(root *Node) bool {
 
 
 //=================================================================================================================
+
+
+func (t *Tree) IsCompleteTree2() bool {
+  count := t.NumNodes()
+  return isCompleteTreeUtil(t.root, 0, count)
+}
+
+func isCompleteTreeUtil(curr *Node, index int, count int) bool {
+  //Implement your solution here
+  if curr == nil {
+    return true
+  }
+  if index > count {
+    return false
+  }
+  return isCompleteTreeUtil(curr.left, 2*index, count) && isCompleteTreeUtil(curr.right, (2*index)+1, count)
+}
+
+
+//====================================================================================================================
+
+
