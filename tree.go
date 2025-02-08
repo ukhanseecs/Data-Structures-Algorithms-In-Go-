@@ -621,3 +621,45 @@ func copyMirrorTree(curr *Node) *Node {
 func (t *Tree) Free() {
   t.root = nil
 }
+
+
+
+//=================================================================================================================
+
+
+func (t *Tree) IsCompleteTree() bool {
+  return isCompleteTree(t.root)
+}
+
+func isCompleteTree(root *Node) bool {
+  //Implement your solution here
+  que := []*Node{root}
+  var foundnil = false
+  
+  if root == nil {
+    return true
+  }
+  
+  for len(que) > 0 {
+    curr := que[0]
+    que = que[1:]
+    
+    if curr == nil {
+      foundnil = true
+    } else {
+        if foundnil{
+          return false
+        }
+        if curr.left != nil {
+         que = append(que, curr.left)
+        }
+        if curr.right != nil {
+          que = append(que, curr.right)
+        }
+    }
+  }
+  return true
+}
+
+
+//=================================================================================================================
