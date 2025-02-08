@@ -8,6 +8,8 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 - [Stacks](#stacks)
 - [Queues](#queues) 
 - [Trees](#trees)
+- [Binary Search Trees](#binary-search-trees)
+
 
 ## [Arrays](./arrays.go)
 - **Sum Array**: Calculate sum of array elements
@@ -53,9 +55,25 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 - **Queue using Stacks**: Implementation using two stacks
   - Add, Remove operations
   - Length, IsEmpty checks
-
+  
 ## [Trees](./tree.go)
 - **Binary Tree Construction**: Level order construction
+- **Tree Properties**:
+  - Number of Nodes
+  - Sum of All Nodes
+  - Number of Leaf Nodes
+  - Number of Full Nodes
+  - Tree Depth
+  - Is Complete Tree
+  - Is Equal Trees
+  - Is Heap
+- **Tree Operations**:
+  - Search Value
+  - Find Maximum Value
+  - Copy Tree
+  - Mirror Tree
+  - Free Tree
+  - Tree to List Conversion
 - **Traversals**:
   - Preorder
   - Inorder
@@ -64,7 +82,9 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
   - Depth First
   - Level Order Line by Line
   - Spiral Order
-- **Nth Node**: Find nth node in different traversals
-- **Path Printing**: Print all root to leaf paths
-
-
+- **Special Operations**:
+  - Nth Node in different traversals
+  - Print All Paths
+  
+## [Binary Search Trees](./binary_search_trees.go)
+- **Construction**: Create BST from sorted array
