@@ -86,5 +86,8 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
   - Nth Node in different traversals
   - Print All Paths
   
-## [Binary Search Trees](./binary_search_trees.go)
+## [Binary Search Trees](./binary_search_trees)
 - **Construction**: Create BST from sorted array
+- **Basic Operations**:
+  - Find Value: Search for a value in BST
+  - Insert Value: Add new value to BST maintaining properties
