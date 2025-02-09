@@ -1,24 +1,4 @@
-func IsBST(root *Node) bool {
-    //Implement your solution here
-    if root== nil {
-      return true
-    }
-    
-    
-    lft := root.left
-    rht := root.right
-    
-    if root.value > lft.value && root.value < rht.value {
-      return true
-    } else {
-      return false
-    }
-    
-    return (IsBST(root.left) && IsBST(root.right))
-}
-
-
-//=================================================
+package main
 
 
 func IsBST(root *Node) bool {

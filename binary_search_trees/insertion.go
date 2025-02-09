@@ -1,3 +1,5 @@
+package main
+
 func (t *Tree) Add(value int) {
     t.root = addNode(t.root, value)
 }

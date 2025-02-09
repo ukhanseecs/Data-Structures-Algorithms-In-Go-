@@ -1,3 +1,5 @@
+package main
+
 func (t *Tree) LcaBST(first int, second int) (int, bool) {
     return LcaBST(t.root, first, second)
 }
@@ -14,5 +16,4 @@ func LcaBST(curr *Node, first int, second int) (int, bool) {
     } else {
       return curr.value, true
     }
-    return 0, false
 }
