@@ -91,4 +91,13 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 - **Basic Operations**:
   - Find Value: Search for a value in BST
   - Insert Value: Add new value to BST maintaining properties
-  
+  - Delete Node: Remove a node while maintaining BST properties
+  - Find Min/Max: Find minimum and maximum values in BST
+- **Advanced Operations**:
+  - Floor: Find largest value less than or equal to given value
+  - Ceil: Find smallest value greater than or equal to given value
+  - Trim Tree: Remove nodes outside given range
+  - Print Range: Print all values within given range
+  - LCA BST: Find Lowest Common Ancestor of two nodes
+- **Properties**:
+  - Is BST: Validate if tree is a valid Binary Search Tree

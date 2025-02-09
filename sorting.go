@@ -1,4 +1,4 @@
-package arrays
+package sort
 
 func Partition01(arr []int, size int) int {
 	//Write your code here
