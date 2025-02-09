@@ -11,7 +11,7 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 - [Binary Search Trees](#binary-search-trees)
 
 
-## [Arrays](./arrays.go)
+## [Arrays](./arrays)
 - **Sum Array**: Calculate sum of array elements
 - **Sequential Search**: Linear search implementation
 - **Binary Search**: Search in sorted array
@@ -38,8 +38,8 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
 - **Partition 0/1/2**: Dutch National Flag problem
 
 
-## Stacks
-### [Array Implementation](./stack_using_array.go)
+## [Stacks](./stack/)
+### Array Implementation
 - **Basic Operations**: Push, Pop, Top, IsEmpty, Length
 - [**Stack Problems**](./stack_problems.go):
   - Sorted Insert
@@ -47,11 +47,11 @@ This repository provides solutions for the [Data Structures & Algorithms In Go](
   - Bottom Insert
   - Reverse Stack
 
-### [Linked List Implementation](./stack_using_ll.go)
+### Linked List Implementation
 - **Basic Operations**: Push, Pop, Peek, IsEmpty, Size
 - **Print**: Display stack contents
 
-## [Queues](./queue.go)
+## [Queues](./queue)
 - **Queue using Stacks**: Implementation using two stacks
   - Add, Remove operations
   - Length, IsEmpty checks
