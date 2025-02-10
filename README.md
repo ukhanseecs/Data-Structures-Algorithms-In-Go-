@@ -37,23 +37,28 @@ All sorting algorithms are implemented in a single file:
 - **Partition 0/1**: Segregate 0s and 1s
 - **Partition 0/1/2**: Dutch National Flag problem
 
-## [Stacks](./stack)
-### [Array Implementation](./stack/stack_using_array.go)
-- **Basic Operations**: Push, Pop, Top, IsEmpty, Length
-### Stack Problems:
-- [**Sorted Insert**](./stack/sorted_insert.go)
-- [**Sort Stack**](./stack/sort.go)
-- [**Bottom Insert**](./stack/bottom_insert.go)
-- [**Reverse Stack**](./stack/reverse.go)
+### Stacks
+- [**Array Implementation**](./stack/stack_using_array.go)
+- [**Linked List Implementation**](./stack/stack_using_ll.go) 
+- [**Stack Problems**](./stack/)
+  - [Balanced Parentheses](./stack/balanced_parantheses.go)
+  - [Sorted Insert](./stack/sorted_insert.go)
+  - [Sort Stack](./stack/sort.go)
+  - [Bottom Insert](./stack/bottom_insert.go)
+  - [Reverse Stack](./stack/reverse.go)
+  - [Min Stack](./stack/min_stack.go)
+  - [Parenthesis Problems](./stack/)
+    - [Print Numbers](./stack/prnt_parenthesis_num.go)
+    - [Duplicate Check](./stack/duplicate_parenthesis.go)
+    - [Max Depth](./stack/max_depth_parenthesis.go)
+    - [Longest Valid](./stack/long_cont_balanced_parenthesis.go)
 
-### [Linked List Implementation](./stack/stack_using_ll.go)
-- **Basic Operations**: Push, Pop, Peek, IsEmpty, Size
-- **Print**: Display stack contents
 
-## [Queues](./queue)
-- [**Queue using Stacks**](./queue/queue_using_stack.go): Implementation using two stacks
-  - Add, Remove operations
-  - Length, IsEmpty checks
+### Queues
+- [**Queue using Stacks**](./queue/queue_using_stack.go)
+- [**Queue Operations**](./queue/)
+  - [Reverse Queue](./queue/reverse.go)
+  - [Reverse K Elements](./queue/reverse_k.go)
 
 ## [Trees](./tree.go)
 All tree operations are implemented in a single file:
