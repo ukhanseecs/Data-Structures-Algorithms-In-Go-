@@ -1,19 +1,17 @@
-package main
+func isBSTArray( preorder[] int, size int) bool {
+  stk := new(Stack)
+  var value int
+  root := -1;
+  for i := 0; i < size; i++ {
+      value = preorder[i]
+      if (value < root){
+          return false
+      }
 
-
-func IsBST(root *Node) bool {
-    //Implement your solution here
-    if root== nil {
-      return true
-    }
-    
-    
-    if root.left != nil && FindMax(root.left).value > root.value {
-      return false
-    }
-    if root.right != nil && FindMin(root.right).value < root.value {
-      return false 
-    }
-    
-    return IsBST(root.left)&&IsBST(root.right)
+      for (stk.Length() > 0 && stk.Top() < value){
+          root = stk.Pop()
+      }
+      stk.Push(value)
+  }
+  return true
 }
